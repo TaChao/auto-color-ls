@@ -1,7 +1,7 @@
 auto-color-ls() {
 	emulate -L zsh
 	echo
-	colorls -A --group-directories-first
+	exa --group-directories-first -a --icons
 }
 
 chpwd_functions=(auto-color-ls $chpwd_functions)
